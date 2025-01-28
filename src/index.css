@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+@font-face {
+  font-family: titlefont;
+  src: url(kabisat.ttf);
+}
+
+:root {
+  --iceblue:#20aef5;
+  --hlorange: #f56720;
+  --alertred: #f53120;
+  --gunmetal: #2a3439;
+  --hlgrey: #244353;
+}
+
+header {
+  outline: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12%;
+  width: 100%;
+  background-color: var(--gunmetal);
+
+}
+
+#logo {
+  height: 80%;
+  aspect-ratio: 1/1;
+}
+
+h1 {
+  font-family: titlefont;
+  font-size: calc(1em - 0.5vw);
+  font-weight: lighter;
+  color: white;
+  text-shadow: 0 0 10px var(--iceblue);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10% 5%;
+}

@@ -4,28 +4,24 @@ function App() {
 
   return (
     <>
-      <header>
-        <div>
-          <img src="" alt="Logo" />
-          <h1>Liesenfelt.Net</h1>
-        </div>
-        <nav>
-          <ul>
-            <li>Github</li>
-            <li>Linkedin</li>
-          </ul>
-        </nav>
-      </header>
+    <header>
+      <img src="logo.png" alt="Logo" id='logo' />
+      <h1>Liesenfelt.Net</h1>
+      <nav>
+        <img src="" alt="github"/>
+        <img src="" alt="linkedin"/>
+      </nav>
+    </header>
       <main>
         <div className='tab-container'>
           <div className='tab'>
-            About
+            ABOUT
           </div>
           <div className='tab'>
-            Contact
+            CONTACT
           </div>
           <div className='tab'>
-            Projects
+            PROJECTS
           </div>
         </div>
         <div className='content-container'>

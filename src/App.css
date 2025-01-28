@@ -1,6 +1,42 @@
+:root {
+  --iceblue:#20aef5;
+  --hlorange: #f56720;
+  --alertred: #f53120;
+  --gunmetal: #2a3439;
+  --hlgrey: #898e91;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 88%;
+  background-color: var(--hlgrey);
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 20px 20px;
+  padding: 20px 20px;
+}
+
+.tab-container {
+  background-color: var(--gunmetal);
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 10px 10px;
+  display: flex;
+  height: 7%;
+  width: 100%;
+  align-items: center;
+}
+
+.tab {
+  border: solid black;
+  border-width: 0px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
 }
