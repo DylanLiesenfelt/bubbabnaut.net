@@ -8,13 +8,13 @@ function App() {
       <img src="logo.png" alt="Logo" id='logo' />
       <h1>Liesenfelt.Net</h1>
       <nav>
-        <img src="" alt="github"/>
-        <img src="" alt="linkedin"/>
+        <img src="/icons/ghicon.png" alt="github"/>
+        <img src="/icons/liIcon.png" alt="linkedin"/>
       </nav>
     </header>
       <main>
         <div className='tab-container'>
-          <div className='tab'>
+          <div className='tab' id='about-tab'>
             ABOUT
           </div>
           <div className='tab'>
@@ -24,7 +24,7 @@ function App() {
             PROJECTS
           </div>
         </div>
-        <div className='content-container'>
+        <div id='content-container'>
           <div className='content'>
             <h3>About</h3>
           </div>

@@ -16,20 +16,19 @@ body {
 :root {
   --iceblue:#20aef5;
   --hlorange: #f56720;
-  --alertred: #f53120;
+  --redred: #fa4f40;
   --gunmetal: #2a3439;
   --hlgrey: #898e91;
   --stormwhite:rgb(226, 226, 226);
 }
 
 header {
-  outline: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 12%;
   width: 100%;
-  background-color: var(--stormwhite);
+  background-color: var(--redred);
 }
 
 #logo {
@@ -51,4 +50,11 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   padding: 10% 5%;
+}
+
+nav > img {
+  margin-right: 5%;
+  height: 42px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
 }

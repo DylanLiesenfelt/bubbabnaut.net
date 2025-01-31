@@ -1,10 +1,3 @@
-:root {
-  --iceblue:#20aef5;
-  --hlorange: #f56720;
-  --alertred: #f53120;
-  --gunmetal: #2a3439;
-  --hlgrey: #898e91;
-}
 
 #root {
   height: 100%;
@@ -17,14 +10,11 @@ main {
   display: flex;
   flex-direction: column;
   height: 88%;
-  background-color: var(--gunmetal);
-  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 20px 20px;
+  background-color: var(--stormwhite);
   padding: 20px 20px;
 }
 
 .tab-container {
-  background-color: whitesmoke;
-  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 10px 10px;
   display: flex;
   height: 7%;
   width: 100%;
@@ -32,10 +22,26 @@ main {
 }
 
 .tab {
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 80%;
   width: 25%;
+  padding: 2%;
+  font-family: sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+
+#about-tab {
+  background-color: whitesmoke;
+}
+
+#content-container {
+  background-color: whitesmoke;
+  height: 100%;
+  padding: 2% 5%;
+  box-shadow: rgba(0, 0, 0, 0.184) 5px 5px 5px;
 }
