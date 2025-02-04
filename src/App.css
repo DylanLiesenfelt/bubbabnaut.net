@@ -35,13 +35,26 @@ main {
   border-top-right-radius: 0.2rem;
 }
 
-#about-tab {
-  background-color: whitesmoke;
-}
-
 #content-container {
   background-color: whitesmoke;
   height: 100%;
   padding: 2% 5%;
   box-shadow: rgba(0, 0, 0, 0.184) 5px 5px 5px;
+}
+
+.tab:not(.active) {
+  opacity: 0.7;
+}
+
+.tab:hover:not(.active) {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
 }
