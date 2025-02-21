@@ -1,42 +1,14 @@
 import { useState, useEffect } from 'react'
-import Header from './components/header'
+import Header from './components/Header'
+import Gallery from './components/Gallery'
 import './App.css'
+
 function App() {
   const [activeTab, setActiveTab] = useState('about')
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName.toLowerCase())
   }
-
-  // ==========> Photo Gallery <==========
-  const images = [
-    "photo gallery\image (1).jpg",
-    "photo gallery\image (2).jpg",
-    "photo gallery\image (3).jpg",
-    "photo gallery\image (4).jpg",
-    "photo gallery\image (5).jpg",
-    "photo gallery\image (6).jpg",
-    "photo gallery\image (7).jpg",
-    "photo gallery\image (8).jpg",
-    "photo gallery\image (9).jpg",
-    "photo gallery\image (10).jpg",
-    "photo gallery\image (11).jpg",
-    "photo gallery\image (12).jpg",
-    "photo gallery\image (13).jpg",
-    "photo gallery\image (14).jpg",
-    "photo gallery\image (15).jpg",
-    "photo gallery\image (16).jpg"
-  ]
-
-  // get random index for the images array
-  const getRandomIndex = (array) => {
-    return Math.floor(Math.random() * array.length);
-  }
-
-  // Update image
-
-  
-
   return (
     <>
       <Header></Header>
@@ -76,15 +48,21 @@ function App() {
               I currently live in West Palm Beach, FL with amazing girlfriend and our 3 awesome siberian Huskies; Medusa, Leo, and Forrest.<br/><br/>
               Thanks for coming to my website, have a look around!</p>
               <div className='photo-gallery'>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <Gallery startIndex={0} />
+                <Gallery startIndex={1}/>
+                <Gallery startIndex={2}/>
               </div>
             </div>
           )}
           {activeTab === 'contact' && (
             <div className={`content ${activeTab === 'contact' ? 'active' : ''}`}>
               <h3>Contact</h3>
+              <div>
+                Resume: Link
+                E-mail:
+                GitHub:
+                Linkedin
+              </div>
             </div>
           )}
           {activeTab === 'projects' && (
