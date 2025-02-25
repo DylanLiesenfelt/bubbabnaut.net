@@ -1,13 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="" href="/public/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liesenfelt.Net</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liesenfelt.net</title>
+    <link rel="stylesheet" href="./public/styles/main.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="nav-side">
+            <img src="./public/images/icons/logo.png" alt="" class="logo">
+        </a>
+        <h1>Liesenfelt.net</h1>
+        <div class="nav-side">
+            <a href="https://github.com/DylanLiesenfelt" class="link">
+                <img src="./public/images/icons/ghicon.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/dylanliesenfelt/" class="link">
+                <img src="./public/images/icons/liIcon.png" alt="">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="tab-cont">
+                <div id="about-tab" class="active-tab">About</div>
+                <div id="contact-tab" class="tabs">Contact</div>
+                <div id="project-tab" class="tabs">Projects</div>
+            </div>
+            <div id="display-cont">
+                <div id="about" class="active-card">
+                    <h2>About</h2>
+                </div>
+                <div id="contact" class="card">
+                    <h2>contatc</h2>
+                </div>
+                <div id="projects" class="card">
+                    <h2>projects</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/mainTabs.js"></script>
+</body>
 </html>
