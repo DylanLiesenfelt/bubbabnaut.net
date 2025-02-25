@@ -81,6 +81,9 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: bolder;
 }
 
 .tabs {
@@ -124,4 +127,27 @@ main{
     display: none;
     height: 100%;
     width: 100%;
+}
+
+#text-cont {
+    padding: 3%;
+}
+
+#contact {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#contact-cont {
+    height: 30%;
+    width: 75%;
+    display: flex;
+    align-items: left;
+    text-align: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: bolder;
 }
