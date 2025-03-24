@@ -1,0 +1,39 @@
+@font-face {
+    font-family: navbar;
+    src: url('/fonts/Kabisat\ Demo-ItalicTall.ttf');
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(185, 75, 75);
+}
+
+header img {
+    height: 90%;
+}
+
+h1 {
+    font-family: navbar;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: lighter;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+header button {
+    height: 90%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
