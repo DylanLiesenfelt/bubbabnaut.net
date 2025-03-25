@@ -20,11 +20,6 @@ const Home = () => {
     return (
         <div id="main">
             <h3 className='section-header'>About</h3>
-            <div id='link-container'>
-            <a href="https://github.com/DylanLiesenfelt">GitHub</a>
-            <a href="https://www.linkedin.com/in/dylanliesenfelt/">Linkedin</a>
-            <a href="http://">Resume</a>
-            </div>
             <p id='about-text'>
             Thanks for visiting my site!<br /><br />
             My name is Dylan Liesenfelt, and I’m a {age}-year-old Computer Science student at Florida Atlantic University (FAU) in Boca Raton, FL.<br /><br />
