@@ -2,7 +2,6 @@
     font-family: navbar;
     src: url('/fonts/Kabisat\ Demo-ItalicTall.ttf');
 }
-
 header {
     position: fixed;
     top: 0;
@@ -15,11 +14,9 @@ header {
     justify-content: space-evenly;
     background-color: rgb(185, 75, 75);
 }
-
 header img {
     height: 90%;
 }
-
 h1 {
     font-family: navbar;
     font-size: 0.8rem;
@@ -27,13 +24,59 @@ h1 {
     font-weight: lighter;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
-
-header button {
+#hamburger {
     height: 90%;
     aspect-ratio: 1/1;
     border: none;
     background-color: inherit;
     color: white;
     font-weight: bolder;
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+}
+#hamburger:hover {
+    font-size: 2.2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px white;
+}
+.dropdown-menu {
+    position: fixed;
+    top: 85px;
+    /* just under the navbar */ left: 0;
+    width: 100%;
+    height: calc(100vh - 85px);
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: slideDown 0.3s ease;
+}
+@keyframes slideDown {
+    from {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.dropdown-menu li {
     font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.dropdown-menu li:hover {
+    color: #b94b4b;
 }

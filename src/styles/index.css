@@ -1,14 +1,13 @@
 /* General Reset and Body Styling */
 body {
-    background-color: #c8c8c8; /* Same as rgb(200, 200, 200) */
-    margin: 0;
+    background-color: #c8c8c8;
+    /* Same as rgb(200, 200, 200) */ margin: 0;
     padding: 0;
     font-family: sans-serif;
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
 }
-
 /* Ensure the root container takes full height */
 #root {
     width: 100%;
@@ -16,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 /* Container for Projects */
 .container {
     display: flex;
@@ -24,17 +22,18 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 #main {
     margin-top: 85px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 .section-header {
     font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 0.5rem 1rem;
@@ -44,7 +43,6 @@ body {
     margin: 0;
     margin-top: 5px;
 }
-
 .section-header::before {
     content: '';
     position: absolute;
@@ -56,7 +54,6 @@ body {
     transform: translateY(-50%) rotate(45deg);
     box-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
 }
-
 #about-text {
     background-color: white;
     border-left: 0.25rem solid #b94b4b;

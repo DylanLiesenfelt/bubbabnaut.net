@@ -17,12 +17,10 @@
     color: #222;
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
-
 .project:hover {
     transform: translateY(-4px);
     box-shadow: 0 0 20px rgba(185, 75, 75, 0.6);
 }
-
 .project h3 {
     font-size: 1.3rem;
     color: rgb(185, 75, 75);
@@ -30,7 +28,6 @@
     border-bottom: 1px solid #444;
     padding-bottom: 0.25rem;
 }
-
 .project p {
     font-size: 0.95rem;
     color: black;
