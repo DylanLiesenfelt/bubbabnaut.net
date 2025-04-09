@@ -1,0 +1,55 @@
+#projects {
+    height: 100%;
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+#projects h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#project-container {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+
+}
+
+.project-card {
+    height: 230px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.project-card > h3 {
+    background-color: rgb(80, 80, 95);
+    margin: 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+
+.project-card p {
+    height: 80%;
+    color: rgb(45, 45, 50);
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 3.5vw;
+}
