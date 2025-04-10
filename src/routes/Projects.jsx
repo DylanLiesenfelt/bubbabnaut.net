@@ -16,7 +16,7 @@ const Projects = () => {
                     siteURL={'https://nextpass1.netlify.app/'}
                 />
                 <ProjectCard 
-                    title="Clickmagedon" 
+                    title="Clickmageddon" 
                     desc={
                     <>
                         <strong>Clickmageddon</strong> is a simple, mobile-friendly browser game that combines cookie clicking with card collecting. The goal is to build an interactive gallery that promotes artists while providing a fun and engaging experience. Clickmageddon was developed using pure <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>.
