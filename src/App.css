@@ -1,89 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: header;
+    src: url('Thuast-Demo.otf');
+}
+
 body {
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
+    background-color: black;
+    height: 200vh;
+    width: 100%;
 }
 
 #root {
-  height: 100%;
-  width: 100%;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 412px;
+    gap: 1rem;
 }
 
 header {
-  background-color: rgb(40, 40, 50);
-  height: 12%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    height: 70px;
+    width: 100%;
+    background-color: #3b5986;
+    background-image: url('headerbg.webp');
+    background-position: center;
+    background-size: cover;
 }
 
-#logo-container {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-evenly;
+header > div {
+    height: 100%;
+    width: 60%;
+    align-items: flex-end;
+    margin-left: 1rem;
+    color: rgba(250, 239, 160, 0.89);
 }
 
-#logo-container img {
-  height: 90%;
-  aspect-ratio: 1/1;
+h1 {
+    display: flex;
+    align-items: center;
+    height: 100%;  
+    font-size: calc(100% + 2vw);
+    margin-left: 1rem;
+    font-family: header;
 }
 
-#link-nav {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#link-nav button {
-  height: 100%;
-  width: 40%;
-  border: 0;
-  background: inherit;
-  font-family: sans-serif;
-  font-weight: bolder;
-  font-size: 1rem;
-  color: rgb(150, 145, 125);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#link-nav button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-#link-nav button:active {
-  background-color: rgba(0, 0, 0, 0.1);
+#logo {
+    height: 95%;
 }
 
 main {
-  height: 88%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(40, 40, 50);
-  background-image: url('bg.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    height: 85%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(235, 235, 235);
+    padding: 1rem;
 }
 
-#content-container {
-  width: 90%;
-  height: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: .25rem;
-  box-shadow: inset 0 0 3rem 1rem rgba(255, 255, 255, 0.2);
+#about {
+    justify-content: center;
+    height: 50%;
 }
 
+#about-text-wrap {
+    border: 5px ridge silver;
+    background-color: white;
+    padding: 0.5rem;
+    height: 25%;
+    font-size: calc(52% + 1vw);
+    font-family: monospace;
+}
+
+#about-image-wrap {
+    width: 60%;
+}
+
+#about-image-wrap > img {
+    height: 100%;
+    width: 100%;
+} 
+
+#about-btn-wrap {
+    flex-wrap: wrap;
+    width: 100%;
+    aspect-ratio: 2/1;
+    justify-content: space-evenly;
+}
+
+#about-btn-wrap > button {
+    width: 45.5%;
+    height: 45%;
+    border-radius: 0.5rem;
+    font-size: calc(100% + 1vw);
+    font-family: monospace;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    outline: 3px solid black;
+    box-sizing: border-box;
+    transition: ease-in-out 300ms;
+    text-shadow: 0 0 5px black;
+}
+
+#about-btn-wrap > button:active {
+    font-size: calc(100% + 1.3vw);
+    box-shadow: inset 0 0 1px 13px rgba(255, 255, 255, 0.2);
+    
+}
+
+#gh-btn {
+    box-shadow: inset 0 0 1px 13px #e83838;
+    border: 3px solid #ff3b3b;
+    background-color: #a22727;
+}
+
+#li-btn {
+    box-shadow: inset 0 0 1px 13px #28b8f0;
+    border: 3px solid #2ac3ff;
+    background-color: #2093c0;
+}
+
+#mail-btn {
+    box-shadow: inset 0 0 1px 13px #f8b028;
+    border: 2px solid #ffb936;
+    background-color: #c78d20;
+}
+
+#resume-btn {
+    box-shadow: inset 0 0 1px 13px #50e028;
+    border: 3px solid #5bff2e;
+    background-color: #40b320;
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+    background-color: rgb(41, 41, 41);
+}

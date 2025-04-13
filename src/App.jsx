@@ -1,31 +1,45 @@
+import { useState } from 'react'
 import './App.css'
-import { useNavigate, Route, Routes } from 'react-router-dom'
-import About from './routes/About.jsx'
-import Projects from './routes/Projects.jsx'
-import Resume from './routes/Resume.jsx'
 
 function App() {
-  const navigate = useNavigate();
+
   return (
     <>
-      <header>
-        <div id='logo-container'>
-          <img src="logo.png" alt="site logo" />
+      <header className='wrap'>
+        <div className='wrap'>
+          <img src="logo.png" alt="Bubbanaut logo" id='logo'/>
+          <h1>Bubbanaut</h1>
         </div>
-        <nav id='link-nav'>
-          <button onClick={() => navigate('/')}>About</button>
-          <button onClick={() => navigate('/projects')}>Projects</button>
-        </nav>
       </header>
-      <main>
-        <div id='content-container'>
-          <Routes>
-            <Route path='/' element={<About/>}/>
-            <Route path='/projects' element={<Projects/>}/>
-            <Route path='/resume' element={<Resume/>}/>
-          </Routes>
+      <main className='wrap'>
+        <div id='about' className='card'>
+          <div id='about-text-wrap' className='wrap' >
+            <p>Welcome! My name is <strong>Dylan Liesenfelt</strong>, and I am a <strong>Software Enginner</strong>.
+            Currently attend Florida Atlantic University for <strong>Computer Science</strong> and <strong>Artifical Intelligence</strong>.
+            <br /> <br />I served for 8 years in the US Navy as an Aviation Electrician for H-60 platform helicopters. 
+            Right now I live in West Palm Beach, FL, with my amazing girlfriend and our three awesome Huskies.
+            </p>
+          </div>
+          <div id='about-image-wrap' className='wrap'>
+            <img src="hero.png" alt="Dylan liesenfelt as a pokemon trainer with his dogs as pokemon" />
+          </div>
+          <div className='wrap' id='about-btn-wrap'>
+            <button id='gh-btn' className='about-btn'>Github</button>
+            <button id='li-btn' className='about-btn'>Linkedin</button>
+            <button id='mail-btn' className='about-btn'>E-Mail</button>
+            <button id='resume-btn' className='about-btn'>Resume</button>
+          </div>
+        </div>
+        <div id='projects' className='card'>
+          <h3>Projects</h3>
+          <div id='projects-wrap' className='wrap'>
+
+          </div>
         </div>
       </main>
+      <footer>
+        <p>Thanks for coming visitor: </p>
+      </footer>
     </>
   )
 }
