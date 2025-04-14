@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: header;
-    src: url('Thuast-Demo.otf');
+    src: url('./assets/fonts/Thuast-Demo.otf');
 }
 
 @font-face {
     font-family: poke;
-    src: url('PokemonGb-RAeo.ttf');
+    src: url('./assets/fonts/PokemonGb-RAeo.ttf');
 }
 
 body {
@@ -26,6 +26,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -39,6 +40,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 50%;
     max-width: 412px;
     gap: 1rem;
 }
@@ -80,7 +82,7 @@ h1 {
 }
 
 main {
-    height: 85%;
+    height: 100%;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -162,6 +164,54 @@ main {
     box-shadow: inset 0 0 1px 13px #50e028;
     border: 3px solid #5bff2e;
     background-color: #40b320;
+}
+
+#projects-wrap {
+    outline: 1px solid red;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-arrow {
+    max-width: 70px;
+    width: 10%;
+    aspect-ratio: 1/1.5;
+    background-image: url('./assets/icons/arrow.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: none;
+}
+
+.project-arrow:hover {
+    background-image: url('./assets/icons/arrow2.png');
+    background-color: inherit;
+}
+
+.project-arrow:active {
+    background-image: url('./assets/icons/arrow3.png');
+}
+
+#left-arrow {
+    transform: rotate(90deg);
+}
+
+#right-arrow {
+    transform: rotate(-90deg)
+}
+
+.project {
+    outline: 1px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Project from './components/Project';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
       <header className='wrap'>
         <div className='wrap'>
           <img src="logo.png" alt="Bubbanaut logo" id='logo'/>
-          <h1>Bubbanaut </h1>
+          <h1>Bubbanaut</h1>
+
         </div>
       </header>
       <main className='wrap'>
@@ -31,7 +33,7 @@ function App() {
             </p>
           </div>
           <div id='about-image-wrap' className='wrap'>
-            <img src="hero.png" alt="Dylan liesenfelt as a pokemon trainer with his dogs as pokemon" />
+            <img src="src\assets\images\hero.png" alt="Dylan liesenfelt as a pokemon trainer with his dogs as pokemon" />
           </div>
           <div className='wrap' id='about-btn-wrap'>
             <button id='gh-btn' className='about-btn' onClick={() => goToLink('https://github.com/DylanLiesenfelt', '_blank')}><strong>Github</strong></button>
@@ -41,9 +43,10 @@ function App() {
           </div>
         </div>
         <div id='projects' className='card'>
-          <h3>Projects</h3>
           <div id='projects-wrap' className='wrap'>
-
+            <button className='project-arrow' id='left-arrow'>.</button>
+              <Project />
+            <button className='project-arrow' id='right-arrow'>.</button>
           </div>
         </div>
       </main>
